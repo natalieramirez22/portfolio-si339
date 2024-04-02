@@ -251,9 +251,11 @@ footer {
     width: 50%;
     height: 50%;
     border-radius: 10px;
+    float: right;
+    margin: 20px 100px 0 40px;
 }
 
-.front-end-dev-text, .back-end-dev-text, .testing, .ios-dev, .course-projects, .leadership {
+.front-end-dev-text, .back-end-dev-text, .testing-text, .ios-dev-text, .course-projects-text, .leadership-text {
     width: 60%;
     padding: 20px 40px 0 40px;
 }
@@ -294,9 +296,31 @@ footer {
     font-style: italic;
 }
 
-.ios-dev img {
-    width: 40%;
+.ios-dev-img {
+    width: 50%;
+    height: 50%;
     float: right;
-    margin: 50px 0 20px 40px; /* top right bottom left */
+    margin: 50px 40px 20px 50px;
+}
+
+.ios-dev-img img {
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin: 20px 100px 0 40px;
     border-radius: 10px;
+}
+
+.leadership-img, .course-projects-img {
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin: 50px 40px 20px 50px;
+}
+
+.leadership-img img, .course-projects-img img {
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin: 20px 100px 0 40px;
 }

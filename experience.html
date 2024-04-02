@@ -3,9 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c14023249.js" crossorigin="anonymous"></script>
     <title>Experience</title>
 </head>
 <body>
-    
+    <div class="skip"><a href = "#main">Skip to Main Content</a></div>
+
+    <header>
+        <div class="nav-container">
+            <img src="images/logo-light.png" alt="logo light" class="logo">
+
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "experience.html" class="active-page" aria-current="page">Experience</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li><a href = "connect.html">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="experience-container">
+            <h1>Experience</h1>
+            <h2>Front-End Development</h2>
+            <div class="front-end-dev">
+                <div class="front-end-dev-text">
+                    <h3>Greymatter.io Dashboard</h3>
+                    <h4>Summer 2021 - Internship</h4>
+                    <p> Contributed significantly to the upgrade of the company's main dashboard, focusing on integrating new features 
+                        and rectifying existing bugs. This endeavor utilized <span class="keyword">ReactJS</span>, enabling the real-time display of user data, which significantly improved the dashboard's responsiveness and overall user experience.
+                    </p>
+                    <p>
+                        Specific features I worked on include: 
+                        <ul>
+                            <li>Visual data organization</li>
+                            <li>Customizable user settings</li>
+                            <li>Improved data visualization</li>
+                        </ul>
+                    </p>
+                </div>
+                <img src="images/greymatter-dashboard.png" alt="greymatter dashboard">
+            </div>
+            <h2>Back-End Development</h2>
+            <div class="back-end-dev">
+                <div class="back-end-dev-text">
+                    <h3>Greymatter.io Diagnostic Tool</h3>
+                    <h4>Summer 2022 - Internship</h4>
+                    <p>Developed a tool to assist product team members in finding issues within the service mesh (company's software product).
+                        The tool fascilitated the process of diagnosing and fixing bugs by providing a user-friendly interface that allows for easy access to the software's logs, error messages, 
+                        and creates a helpful visual diagram.
+                    </p>
+                    <p>
+                        In collaboration with three fellow interns, we developed the project utilizing <span class="keyword">Python</span> and <span class="keyword">Kubernetes</span>, 
+                        and deployed it using <span class="keyword">Docker</span>.
+                    </p>
+                </div>
+                <div class="back-end-dev-img">
+                    <img src="images/docker.png" alt="docker" class="docker">
+                    <img src="images/kubernetes.png" alt="kubernetes">
+                </div>  
+            </div>
+            <h2>Testing</h2>
+            <div class="testing">
+                <div class="testing-text">
+                    <h3>Securiport Quality Assurance</h3>
+                    <h4>Summer 2023 - Internship</h4>
+                    <p>Conducted extensive testing on both software and hardware products to ensure that the new features and bug fixes were functioning as intended, reporting any issues to the development team. 
+                        Tested airport security systems, including biometric scanners, facial recognition software, and passport readers.
+                    </p>
+                    <p>
+                        Assisted management team with administrative tasks, such as reviewing reports and documentation, and provided feedback on the overall quality of the products.
+                    </p>
+                </div>
+                <img src="images/securiport-qa.png" alt="securiport qa">
+            </div>
+            <h2>iOS Development</h2>
+            <div class="ios-dev">
+                <div class="ios-dev-text">
+                    <h3>Personal Projects</h3>
+                    <h4>2019 - Present</h4>
+                    <p>
+                        Developed several iOS applications, in hackathons and longer duration personal projects, such as:
+                        <ul>
+                            <li>Workout Logging App <span class="italicize">(Summer 2023)</span></li>
+                                <ul>
+                                    <li>Inspired by my hobby of going to the gym!</li>
+                                </ul>
+                            <li>ASL Learning App <span class="italicize">(Winter 2021)</span></li>
+                                <ul>
+                                    <li>Uses <span class="keyword">Machine Learning</span> to help users learn American Sign Language!</li>
+                                </ul>
+                            <li>Scholarship Finder <span class="italicize">(Summer 2020)</span></li>
+                                <ul>
+                                    <li>Helps marginalized groups find financial opportunities!</li>
+                                </ul>
+                            <li>Female Empowerment Affirmations App <span class="italicize">(Summer 2020)</span></li>
+                            <ul>
+                                <li>First ever iOS app developed in a summer coding camp (shoutout Kode with Klossy)!</li>
+                            </ul>
+                        </ul> 
+                    </p>
+                    <p>
+                        These projects were built using <span class="keyword">Swift</span> and <span class="keyword">Xcode</span>, designed on <span class="keyword">Figma</span>, and stored user login information and progress in <span class="keyword">Firebase</span>.
+                    </p>
+                </div>
+                <!-- <img src="images/girl-talk.png" alt="ios projects"> -->
+            </div>
+            <h2>Course Projects</h2>
+            <div class="course-projects">
+                <div class="course-projects-text">
+                    <h3>University of Michigan</h3>
+                    <h4>2022 - Present</h4>
+                    <p>
+                        Completed several projects in my computer science and engineering courses, such as:
+                        <ul>
+                            <li>Introduction to Computer Organization - EECS 370 <span class="italicize">(Winter 2024)</span></li>
+                                <ul>
+                                    <li>Developed parts and functions of a simple operating system using <span class="keyword">C</span> and <span class="keyword">Assembly</span>.</li>
+                                </ul>
+                            <li>Programming and Data Structures - EECS 281 <span class="italicize">(Fall 2023)</span></li>
+                                <ul>
+                                    <li>.</li>
+                                </ul>
+                            <li>Design in the Real World - ENGR 100 <span class="italicize">(Winter 2023)</span></li>
+                                <ul>
+                                    <li>Developed a smart alarm clock in <span class="keyword">Python</span> that connects to the user's calendar using the <span class="keyword">Google Calendar API</span> for automated wake-ups.</li>
+                                    <li>Contributed to a detailed technical report documenting every step of the thought, design, and development processes.</li>
+                                </ul>
+                            <li>Programming and Introductory Data Structures - EECS 280 <span class="italicize">(Winter 2023)</span></li>
+                                <ul>
+                                    <li>Developed a classification <span class="keyword">machine learning</span> algorithm to accurately sort unmarked class forum Piazza page posts by topic.</li>
+                                </ul>
+                        </ul>
+                    </p>
+                    <p>
+                        These projects were completed using a variety of programming languages and tools, utilizing <span class="keyword">Github</span> for version control. 
+                    </p>
+                </div>
+                <!-- <img src="images/umcp.png" alt="university of maryland"> -->
+            </div>
+            <h2>Leadership & Awards</h2>
+            <div class="leadership">
+                <div class="leadership-text">
+                    <h3>Leadership</h3>
+                    <p>
+                        Served as the President of the Computer Science Club at my university, where I organized events, workshops, and hackathons for students to learn and grow in the field of computer science.
+                    </p>
+                    <p>
+                        Additionally, I was
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <ul>
+            <li>C++</li>
+            <li>C</li>
+            <li>MATLAB</li>
+            <li>Python</li>
+            <li>HTML / CSS</li>
+            <li>Javascript</li>
+            <li>Swift</li>
+            <li>Go</li>
+            <li>Java</li>
+            <li>ReactJS</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+        </ul> -->
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>© 2024 Natalie Ramirez</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.github.com/natalieramirez22" tabindex="-1" class="fa fa-github" target="_blank" aria-label="personal github"></a>
+                <a href="https://www.linkedin.com/in/natalieramirez22" tabindex="-1" class="fa fa-linkedin" target="_blank" aria-label="personal linkedin"></a>
+                <a href="https://open.spotify.com/user/vi12x461skxgslxp2yb1l8aya?si=7b30353dd53a426f" tabindex="-1" class="fa-brands fa-spotify" target="_blank" aria-label="ktp twitter link"></a>
+                <a href="mailto:natalie.ramirez.mailbox@gmail.com" tabindex="-1" class="fa fa-envelope" aria-label="email"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

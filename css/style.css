@@ -18,7 +18,7 @@ body {
 
 .logo {
     float: left;
-    width: 30%;
+    width: 20%;
     padding-top: 30px;
     padding-left: 20px;
 }
@@ -102,6 +102,20 @@ h2 {
     margin-top: 20px;
 }
 
+h3 {
+    color: var(--dark-blue);
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h4 {
+    color: var(--dark-blue);
+    font-size: 1.2em;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
 .skip a{
 position: absolute;
 top: -40px;
@@ -124,6 +138,14 @@ top: 20px
     display: auto;
     width: 60%;
     padding-right: 50px;
+}
+
+.intro-small p {
+    padding: 20px 40px 0 40px;
+}
+
+.p-michigan {
+    font-style: italic;
 }
 
 .intro-container img {
@@ -163,4 +185,118 @@ footer {
     font-size: 1.5em;
     padding-right: 10px;
     text-decoration: none;
+}
+
+.experience-container h1 {
+    padding: 40px 0 0 60px;
+}
+
+.experience-container h2 {
+    padding-top: 20px;
+}
+
+.experience-container h2::before {
+    content: '';
+    display: inline-block;
+    height: 4px;
+    background-color: var(--medium-blue);
+    position: relative;
+    width: 30%;
+    border-radius: 10px;
+    margin: 0 20px 5px 20px;
+}
+
+.experience-container h2::after {
+    content: '';
+    display: inline-block;
+    height: 4px;
+    background-color: var(--medium-blue);
+    position: relative;
+    width: 30%;
+    border-radius: 10px;
+    margin: 0 20px 5px 20px;
+}
+
+.experience-container h4 {
+    padding: 0 20px 10px 20px; /* top right bottom left */
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: left;
+    font-style: italic;
+}
+
+.experience-container {
+    padding-bottom: 100px;
+}
+
+.front-end-dev, .back-end-dev, .testing, .ios-dev, .course-projects, .leadership {
+    display: flex;    
+}
+
+.front-end-dev img {
+    width: 40%;
+    float: right;
+    margin: 50px 50px 20px 40px; /* top right bottom left */
+    border-radius: 10px;
+}
+
+.back-end-dev-img {
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin: 50px 40px 20px 50px;
+}
+
+.back-end-dev-img img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.front-end-dev-text, .back-end-dev-text, .testing, .ios-dev, .course-projects, .leadership {
+    width: 60%;
+    padding: 20px 40px 0 40px;
+}
+
+.front-end-dev-text p, .back-end-dev-text p, .testing-text p, .ios-dev-text p, .course-projects-text p, .leadership-text p {
+    padding: 20px 20px 0 20px; /* top right bottom left */
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.front-end-dev-text h3, .back-end-dev-text h3, .testing-text h3, .ios-dev-text h3, .course-projects-text h3, .leadership-text h3 {
+    padding: 20px 20px 0 20px; /* top right bottom left */
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.front-end-dev-text ul, .ios-dev-text ul, .course-projects-text ul {
+    padding: 0 20px 0 60px; /* top right bottom left */
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.front-end-dev-text ul li, .ios-dev-text ul li, .course-projects-text ul li {
+    padding: 0 0 0 10px; /* top right bottom left */
+    list-style-type: square;
+}
+
+.keyword {
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.italicize {
+    font-style: italic;
+}
+
+.ios-dev img {
+    width: 40%;
+    float: right;
+    margin: 50px 0 20px 40px; /* top right bottom left */
+    border-radius: 10px;
 }

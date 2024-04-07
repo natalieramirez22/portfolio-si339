@@ -1,7 +1,54 @@
 :root {
     --dark-blue: #04142C;
     --medium-blue: #3370d9;
-    --light-blue: #73a3f7; 
+    --light-blue: #73a3f7;
+}
+
+.dark-mode {
+    --dark-blue: #73a3f7; 
+    --medium-blue: #3370d9; 
+    --light-blue: #04142C; 
+    background-color: var(--light-blue); 
+    color: var(--dark-blue); 
+}
+
+.dark-mode nav a, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4 {
+    color: var(--dark-blue);
+}
+
+.dark-mode nav a:hover {
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    font-weight: bold;
+}
+
+.dark-mode .skip a {
+    color: var(--dark-blue);
+}
+
+.icon-button .fa-moon {
+    color: var(--dark-blue);
+}
+
+.dark-mode .icon-button .fa-sun {
+    color: white;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: inherit; 
+    cursor: pointer; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.icon-button:hover {
+    color: #3370d9; 
 }
 
 body {
@@ -14,14 +61,18 @@ body {
     display: inline;
 }
 
-/* in dark mode, set background to dark blue in header element */
-
 .logo {
     float: left;
     width: 20%;
     padding-top: 30px;
     padding-left: 20px;
 }
+
+.intro-container img {
+    width: auto;
+    border-radius: 170px;
+    border: 7px solid var(--dark-blue);
+} 
 
 header::after {
     content: '';
@@ -117,13 +168,15 @@ h4 {
 }
 
 .skip a{
-position: absolute;
-top: -40px;
+    position: absolute;
+    top: -40px;
+    color: var(--dark-blue);
+    padding: 10px;
 }
 
 .skip a:focus{
-position: absolute;
-top: 20px
+    position: absolute;
+    top: 20px
 }
 
 .intro-container {
@@ -148,14 +201,6 @@ top: 20px
     font-style: italic;
 }
 
-.intro-container img {
-    width: 30%;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
 footer {
     background-color: var(--dark-blue);
     color: white;
@@ -165,6 +210,10 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer p {
+    margin-top: 3px;
 }
 
 .copyright {
@@ -181,7 +230,7 @@ footer {
 }
 
 .social-media a {
-    color: white;
+    color: var(--light-blue);
     font-size: 1.5em;
     padding-right: 10px;
     text-decoration: none;

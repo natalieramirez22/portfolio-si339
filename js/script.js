@@ -51,4 +51,42 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const icon = darkModeToggle.querySelector('i'); // Select the icon within the button
+    const modeImage = document.getElementById('mode-image');
 
+    // Apply dark mode from localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon', 'fa-solid');
+        icon.classList.add('fa-sun', 'fa-regular');
+        modeImage.src = 'images/logo-dark.png'; // Dark mode image
+    }
+
+    darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        
+        // Check if dark mode is active and update the icon accordingly
+        if (document.body.classList.contains('dark-mode')) {
+            icon.classList.remove('fa-moon', 'fa-solid');
+            icon.classList.add('fa-sun', 'fa-regular');
+
+           modeImage.src = 'images/logo-dark.png';
+        } else {
+            icon.classList.remove('fa-sun', 'fa-regular');
+            icon.classList.add('fa-moon', 'fa-solid');
+
+            modeImage.src = 'images/logo-light.png';
+        }
+
+        // Save the state to localStorage
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+            // Update the icon to sun, change image to dark mode image
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+            // Revert the icon to moon, change image to light mode image
+        }
+    });
+});

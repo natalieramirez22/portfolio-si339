@@ -383,7 +383,7 @@ footer p {
 }
 
 .intro-text img {
-    width: auto;
+    width: 30%;
     border-radius: 200px;
     border: 7px solid var(--dark-blue);
 }

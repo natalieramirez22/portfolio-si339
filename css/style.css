@@ -307,6 +307,13 @@ footer p {
     margin: 20px 100px 0 40px;
 }
 
+.testing-img img {
+    width: 50%;
+    border-radius: 10px;
+    float: right;
+    margin: 100px 130px 0 40px;
+}
+
 .front-end-dev-text, .back-end-dev-text, .testing-text, .ios-dev-text, .course-projects-text, .leadership-text {
     width: 60%;
     padding: 20px 40px 0 40px;
